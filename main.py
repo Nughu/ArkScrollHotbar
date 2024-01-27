@@ -2,10 +2,12 @@ import time
 
 import pynput
 
-pos = 1
-controller = pynput.keyboard.Controller()
+# Variables
+max_pos = 10 # define up to which hotbar slot the scroll wheel should work
 
 # Main Process
+pos = 1
+controller = pynput.keyboard.Controller()
 
 def on_scroll(x, y, dx, dy):
     dir = 'down' if dy < 0 else 'up'
@@ -17,7 +19,7 @@ def on_scroll(x, y, dx, dy):
         #time.sleep(0.25)
         controller.release((pynput.keyboard.KeyCode(pos + 48)))
     if dir == "up":
-        if pos != 10:
+        if pos != max_pos:
             pos += 1
         if pos == 10:
             controller.press(pynput.keyboard.KeyCode(48))
