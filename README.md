@@ -1,4 +1,4 @@
-- ArkScrollHotbar -
+- ArkScrollHotbar
 
 Ark: Survival Evolved doesn't have a native option to control the hotbar (1-0 Keys) using the scroll wheel.
 ArkScrollHotbar adds this function to the game. This works for any game, but shouldn't be required in most *properly programmed* games.
