@@ -1,0 +1,8 @@
+# Count Python normally
+*.py linguist-detectable=true
+
+# Exclude everything else
+python/** linguist-vendored
+ArkScrollHotbar.bat linguist-vendored
+README.md linguist-documentation
+requirements.txt linguist-documentation

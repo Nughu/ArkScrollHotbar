@@ -1,0 +1,4 @@
+venv/*
+.vscode/*
+python/Lib/site-packages/**/__pycache__
+Save/save.lol
